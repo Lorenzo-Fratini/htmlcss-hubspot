@@ -13,7 +13,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #33475b;
 }
 
 p {
@@ -63,6 +62,7 @@ p {
 }
 
 .leng {
+  color: #32495b;
   float: left;
   border-right: 1px solid #000;
   cursor: pointer;
@@ -75,6 +75,10 @@ p {
 .contact {
   float: left;
   margin: 0 0 0 15px;
+}
+
+.contact a {
+  color: #32495b;
 }
 
 .button-search .page-button {
@@ -125,6 +129,10 @@ nav {
 
 .nav-menu ul li i {
   margin: 0 5px;
+}
+
+.nav-menu a {
+  color: #32495b;
 }
 
 /* corpo principale */
@@ -211,7 +219,6 @@ nav {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #ccc;
-  /*debug*/
 }
 
 .crm-box-1 {
@@ -277,28 +284,33 @@ margin: 20px auto 0 auto;
   margin: 0 10px 0 0;
 }
 
-
-
-
+/* content box */
 .box-cont {
   width: 100%;
   margin: 30px 0 0 0;
-  /* debug */
-  background: green;
 }
 
 .content-box {
   width: 30%;
+  margin: 20px 0 0 0;
+  padding: 2%;
+  box-shadow: 0 0 5px #ccc;
   float: left;
   /* debug */
   height: 400px;
-  background: black;
 }
 
 .box-cont .content-box:nth-child(2) {
-  margin: 0 5%;
+  margin: 20px 5% 0 5%;
 }
 
+
+
+
+
+
+
+/*sezione statistica*/
 .statistics-cont {
   width: 100%;
   padding: 0 10%;
@@ -371,31 +383,84 @@ footer {
   width: 20%;
   margin: 0 5% 0 0;
   float: left;
-  /*debug*/
-  height: 200px;
-  background: yellow;
+}
+
+.footer-item ul li {
+  list-style-type: none;
+  margin: 20px 0 0 0;
+}
+
+.footer-item ul li:first-child {
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-item ul li:nth-child(2){
+  margin: 30px 0 0 0;
+}
+
+.footer-item ul li a {
+  color: #fff;
 }
 
 .footer-leng {
   width: 100%;
-  padding: 30px 0;
+  text-align: center;
   border-bottom: 1px solid #fff;
-  position: relative;
+  margin: 50px 0 0 0;
 }
 
 .leng-text-cont {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: inline-block;
+  padding: 20px 0;
 }
 
 .leng-cont {
   color: #fff;
   margin-right: 10px;
   float: left;
+  cursor: pointer;
 }
 
 .leng-cont:last-child {
   margin-right: 0;
+}
+
+.footer-button {
+  display: inline-block;
+  color: #32495b!important; /*so che sarebbe meglio non utilizzarlo ma non capisco perché viene sovrascritto da una proprietà precedente*/
+  background: #fff;
+  font-size: 0.9em;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-item i {
+  margin-right: 20px;
+}
+
+.footer-bottom {
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+.copy {
+  float: left;
+}
+
+.copy-text {
+  color: #fff;
+  margin: 10px 0 0 0;
+}
+
+.policy {
+  float: right;
+}
+
+.policy a {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  color: #fff;
 }
