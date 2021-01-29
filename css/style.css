@@ -5,14 +5,19 @@
 }
 
 body {
+  background: #f4f9fd;
   color: #33475b;
-  font-family: 'Helvetica', sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
 }
 
 a {
   text-decoration: none;
   color: #33475b;
+}
+
+p {
+  line-height: 1.8;
 }
 
 .row::after {
@@ -26,6 +31,7 @@ a {
 }
 
 .page-button {
+  display: inline-block;
   color: #fff;
   background: #fe775a;
   padding: 20px 30px;
@@ -48,7 +54,6 @@ a {
   width: 100%;
   border-bottom: 2px solid #98a4ad;
   padding: 20px 15%;
-  background: #f4f9fd;
 }
 
 .leng-contact {
@@ -99,6 +104,7 @@ a {
 nav {
   width: 100%;
   padding: 20px 15%;
+  background: #fff;
 }
 
 .nav-menu {
@@ -124,10 +130,10 @@ nav {
 /* corpo principale */
 .jumbo {
   width: 100%;
-  background: #fef1ef;
+  background: #fdf3ee;
   background-image: url(../img/jumbotron.png);
   background-repeat: no-repeat;
-  background-size: 86%;
+  background-size: contain;
   position: relative;
   background-position: 100%;
   height: 635px;
@@ -153,7 +159,6 @@ nav {
 
 .jumbo-subtitle {
   margin: 30px 0 0 0;
-  line-height: 1.8;
 }
 
 .end-text {
@@ -171,27 +176,113 @@ nav {
   bottom: 0;
   left: 0;
 }
-
+/* mid-up-section */
 .mid-up {
-  background: #f4f9fd;
+  width: 100%;
+  margin: 50px 0 0 0;
 }
 
-.powerfull {
-  width: 100%;
-  /*debug*/
-  height: 300px;
-  background: red;
+.mid-up-img-cont {
+  width: 30%;
+  height: 170px;
+  margin: 0 auto;
+  background-image: url(../img/cube.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 
-.crm {
-  width: 100%;
-  /*debug*/
-  height: 300px;
-  background: blue;
+.mid-up-title {
+  text-align: center;
+  font-size: 2.1em;
+  font-weight: bold;
 }
+
+.mid-up-text {
+  width: 80%;
+  margin: 25px auto 0 auto;
+  text-align: center;
+}
+
+.crm-details-cont {
+  width: 100%;
+  margin: 50px 0 0 0;
+  padding: 6% 9% 6% 0;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  /*debug*/
+}
+
+.crm-box-1 {
+  width: 35%;
+  padding: 0 10%;
+  float: left;
+}
+
+.crm-img-cont {
+  width: 100%;
+  height: 90px;
+  background-image: url(../img/book.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.crm-button {
+text-align: center;
+margin: 20px auto 0 auto;
+}
+
+.crm-box-2 {
+  width: 60%;
+  float: left;
+}
+
+.crm-title {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.crm-text {
+  margin: 20px 0 0 0;
+}
+
+.crm-subtitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+
+.bar {
+  width: 60%;
+  padding: 0.7px;
+  margin: 0 0 0 50px;
+  display: inline-block;
+  vertical-align: middle;
+  background: #899397;
+}
+
+.crm-list {
+  margin: 20px 0 0 0;
+}
+
+.crm-list ul li {
+  display: inline;
+  margin: 0 20px 0 0;
+}
+
+.crm-list ul li i {
+  color: #fe775a;
+  margin: 0 10px 0 0;
+}
+
+
+
 
 .box-cont {
   width: 100%;
+  margin: 30px 0 0 0;
   /* debug */
   background: green;
 }
